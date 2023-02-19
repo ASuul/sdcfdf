@@ -1,0 +1,302 @@
+
+
+Booting Linux on physical CPU 0x0
+Linux version 4.6.0-xilinx-gff8137b-dirty (lzq@armdev2) (gcc version 4.8.3 20140320 (prerelease) (Sourcery CodeBench Lite 2014.05-23) ) #25 SMP PREEMPT Fri Nov 23 15:30:52 CST 2018
+CPU: ARMv7 Processor [413fc090] revision 0 (ARMv7), cr=18c5387d
+CPU: PIPT / VIPT nonaliasing data cache, VIPT aliasing instruction cache
+Machine model: Xilinx Zynq
+cma: Reserved 16 MiB at 0x0e000000
+Memory policy: Data cache writealloc
+On node 0 totalpages: 61440
+free_area_init_node: node 0, pgdat c0b39280, node_mem_map cde10000
+  Normal zone: 480 pages used for memmap
+  Normal zone: 0 pages reserved
+  Normal zone: 61440 pages, LIFO batch:15
+percpu: Embedded 12 pages/cpu @cddf1000 s19776 r8192 d21184 u49152
+pcpu-alloc: s19776 r8192 d21184 u49152 alloc=12*4096
+pcpu-alloc: [0] 0 [0] 1 
+Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 60960
+Kernel command line: mem=240M console=ttyPS0,115200 ramdisk_size=33554432 root=/dev/ram rw earlyprintk
+PID hash table entries: 1024 (order: 0, 4096 bytes)
+Dentry cache hash table entries: 32768 (order: 5, 131072 bytes)
+Inode-cache hash table entries: 16384 (order: 4, 65536 bytes)
+Memory: 194412K/245760K available (6345K kernel code, 231K rwdata, 1896K rodata, 1024K init, 223K bss, 34964K reserved, 16384K cma-reserved, 0K highmem)
+Virtual kernel memory layout:
+    vector  : 0xffff0000 - 0xffff1000   (   4 kB)
+    fixmap  : 0xffc00000 - 0xfff00000   (3072 kB)
+    vmalloc : 0xcf800000 - 0xff800000   ( 768 MB)
+    lowmem  : 0xc0000000 - 0xcf000000   ( 240 MB)
+    pkmap   : 0xbfe00000 - 0xc0000000   (   2 MB)
+    modules : 0xbf000000 - 0xbfe00000   (  14 MB)
+      .text : 0xc0008000 - 0xc090c424   (9234 kB)
+      .init : 0xc0a00000 - 0xc0b00000   (1024 kB)
+      .data : 0xc0b00000 - 0xc0b39fe0   ( 232 kB)
+       .bss : 0xc0b39fe0 - 0xc0b71c28   ( 224 kB)
+Preemptible hierarchical RCU implementation.
+	Build-time adjustment of leaf fanout to 32.
+	RCU restricting CPUs from NR_CPUS=4 to nr_cpu_ids=2.
+RCU: Adjusting geometry for rcu_fanout_leaf=32, nr_cpu_ids=2
+NR_IRQS:16 nr_irqs:16 16
+efuse mapped to cf800000
+ps7-slcr mapped to cf802000
+L2C: platform modifies aux control register: 0x72360000 -> 0x72760000
+L2C: DT/platform modifies aux control register: 0x72360000 -> 0x72760000
+L2C-310 erratum 769419 enabled
+L2C-310 enabling early BRESP for Cortex-A9
+L2C-310 full line of zeros enabled for Cortex-A9
+L2C-310 ID prefetch enabled, offset 1 lines
+L2C-310 dynamic clock gating enabled, standby mode enabled
+L2C-310 cache controller enabled, 8 ways, 512 kB
+L2C-310: CACHE_ID 0x410000c8, AUX_CTRL 0x76760001
+zynq_clock_init: clkc starts at cf802100
+Zynq clock init
+sched_clock: 64 bits at 333MHz, resolution 3ns, wraps every 4398046511103ns
+clocksource: arm_global_timer: mask: 0xffffffffffffffff max_cycles: 0x4ce07af025, max_idle_ns: 440795209040 ns
+Switching to timer-based delay loop, resolution 3ns
+clocksource: ttc_clocksource: mask: 0xffff max_cycles: 0xffff, max_idle_ns: 537538477 ns
+ps7-ttc #0 at cf80a000, irq=18
+Console: colour dummy device 80x30
+Calibrating delay loop (skipped), value calculated using timer frequency.. 666.66 BogoMIPS (lpj=3333333)
+pid_max: default: 32768 minimum: 301
+Mount-cache hash table entries: 1024 (order: 0, 4096 bytes)
+Mountpoint-cache hash table entries: 1024 (order: 0, 4096 bytes)
+CPU: Testing write buffer coherency: ok
+CPU0: thread -1, cpu 0, socket 0, mpidr 80000000
+Setting up static identity map for 0x100000 - 0x100058
+CPU1: failed to boot: -1
+Brought up 1 CPUs
+SMP: Total of 1 processors activated (666.66 BogoMIPS).
+CPU: All CPU(s) started in SVC mode.
+devtmpfs: initialized
+VFP support v0.3: implementor 41 architecture 3 part 30 variant 9 rev 4
+clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 19112604462750000 ns
+pinctrl core: initialized pinctrl subsystem
+NET: Registered protocol family 16
+DMA: preallocated 256 KiB pool for atomic coherent allocations
+cpuidle: using governor menu
+hw-breakpoint: found 5 (+1 reserved) breakpoint and 1 watchpoint registers.
+hw-breakpoint: maximum watchpoint size is 4 bytes.
+zynq-ocm f800c000.ps7-ocmc: ZYNQ OCM pool: 256 KiB @ 0xcf880000
+vgaarb: loaded
+SCSI subsystem initialized
+usbcore: registered new interface driver usbfs
+usbcore: registered new interface driver hub
+usbcore: registered new device driver usb
+media: Linux media interface: v0.10
+Linux video capture interface: v2.00
+pps_core: LinuxPPS API ver. 1 registered
+pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+PTP clock support registered
+EDAC MC: Ver: 3.0.0
+Advanced Linux Sound Architecture Driver Initialized.
+clocksource: Switched to clocksource arm_global_timer
+NET: Registered protocol family 2
+TCP established hash table entries: 2048 (order: 1, 8192 bytes)
+TCP bind hash table entries: 2048 (order: 2, 16384 bytes)
+TCP: Hash tables configured (established 2048 bind 2048)
+UDP hash table entries: 256 (order: 1, 8192 bytes)
+UDP-Lite hash table entries: 256 (order: 1, 8192 bytes)
+NET: Registered protocol family 1
+RPC: Registered named UNIX socket transport module.
+RPC: Registered udp transport module.
+RPC: Registered tcp transport module.
+RPC: Registered tcp NFSv4.1 backchannel transport module.
+PCI: CLS 0 bytes, default 64
+Trying to unpack rootfs image as initramfs...
+rootfs image is not initramfs (no cpio magic); looks like an initrd
+Freeing initrd memory: 21924K (cc598000 - cdb01000)
+hw perfevents: enabled with armv7_cortex_a9 PMU driver, 7 counters available
+futex hash table entries: 512 (order: 3, 32768 bytes)
+workingset: timestamp_bits=28 max_order=16 bucket_order=0
+jffs2: version 2.2. (NAND) (SUMMARY)  © 2001-2006 Red Hat, Inc.
+io scheduler noop registered
+io scheduler deadline registered
+io scheduler cfq registered (default)
+dma-pl330 f8003000.ps7-dma: Loaded driver for PL330 DMAC-241330
+dma-pl330 f8003000.ps7-dma: 	DBUFF-128x8bytes Num_Chans-8 Num_Peri-4 Num_Events-16
+e0000000.serial: ttyPS0 at MMIO 0xe0000000 (irq = 158, base_baud = 6249999) is a xuartps
+console [ttyPS0] enabled
+xdevcfg f8007000.ps7-dev-cfg: ioremap 0xf8007000 to cf86e000
+[drm] Initialized drm 1.1.0 20060810
+brd: module loaded
+loop: module loaded
+CAN device driver interface
+gpiod_set_value: invalid GPIO
+libphy: MACB_mii_bus: probed
+macb e000b000.ethernet eth0: Cadence GEM rev 0x00020118 at 0xe000b000 irq 31 (00:0a:35:00:00:00)
+Broadcom BCM5241 e000b000.etherne:00: attached PHY driver [Broadcom BCM5241] (mii_bus:phy_addr=e000b000.etherne:00, irq=-1)
+e1000e: Intel(R) PRO/1000 Network Driver - 3.2.6-k
+e1000e: Copyright(c) 1999 - 2015 Intel Corporation.
+ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+ehci-pci: EHCI PCI platform driver
+usbcore: registered new interface driver usb-storage
+mousedev: PS/2 mouse device common for all mice
+i2c /dev entries driver
+Xilinx Zynq CpuIdle Driver started
+sdhci: Secure Digital Host Controller Interface driver
+sdhci: Copyright(c) Pierre Ossman
+sdhci-pltfm: SDHCI platform and OF driver helper
+mmc0: SDHCI controller on e0100000.ps7-sdio [e0100000.ps7-sdio] using ADMA
+ledtrig-cpu: registered to indicate activity on CPUs
+usbcore: registered new interface driver usbhid
+usbhid: USB HID core driver
+nand: device found, Manufacturer ID: 0x2c, Chip ID: 0xda
+nand: Micron MT29F2G08ABAGAWP
+nand: 256 MiB, SLC, erase size: 128 KiB, page size: 2048, OOB size: 128
+nand: WARNING: pl35x-nand: the ECC used on your system is too weak compared to the one required by the NAND chip
+Bad block table found at page 131008, version 0x01
+Bad block table found at page 130944, version 0x01
+6 ofpart partitions found on MTD device pl35x-nand
+Creating 6 MTD partitions on "pl35x-nand":
+0x000000000000-0x000002800000 : "BOOT.bin-env-dts-kernel"
+0x000002800000-0x000004800000 : "ramfs"
+0x000004800000-0x000005000000 : "configs"
+0x000005000000-0x000006000000 : "reserve"
+0x000006000000-0x000008000000 : "ramfs-bak"
+0x000008000000-0x000010000000 : "reserve1"
+NET: Registered protocol family 10
+sit: IPv6 over IPv4 tunneling driver
+NET: Registered protocol family 17
+can: controller area network core (rev 20120528 abi 9)
+NET: Registered protocol family 29
+can: raw protocol (rev 20120528)
+can: broadcast manager protocol (rev 20120528 t)
+can: netlink gateway (rev 20130117) max_hops=1
+zynq_pm_ioremap: no compatible node found for 'xlnx,zynq-ddrc-a05'
+zynq_pm_late_init: Unable to map DDRC IO memory.
+Registering SWP/SWPB emulation handler
+hctosys: unable to open rtc device (rtc0)
+ALSA device list:
+  No soundcards found.
+RAMDISK: gzip image found at block 0
+EXT4-fs (ram0): couldn't mount as ext3 due to feature incompatibilities
+EXT4-fs (ram0): warning: mounting unchecked fs, running e2fsck is recommended
+EXT4-fs (ram0): mounted filesystem without journal. Opts: (null)
+VFS: Mounted root (ext4 filesystem) on device 1:0.
+devtmpfs: mounted
+Freeing unused kernel memory: 1024K (c0a00000 - c0b00000)
+EXT4-fs (ram0): re-mounted. Opts: block_validity,delalloc,barrier,user_xattr
+random: dd urandom read with 0 bits of entropy available
+ubi0: attaching mtd2
+ubi0: scanning is finished
+ubi0: attached mtd2 (name "configs", size 8 MiB)
+ubi0: PEB size: 131072 bytes (128 KiB), LEB size: 126976 bytes
+ubi0: min./max. I/O unit sizes: 2048/2048, sub-page size 2048
+ubi0: VID header offset: 2048 (aligned 2048), data offset: 4096
+ubi0: good PEBs: 64, bad PEBs: 0, corrupted PEBs: 0
+ubi0: user volume: 1, internal volumes: 1, max. volumes count: 128
+ubi0: max/mean erase counter: 15/7, WL threshold: 4096, image sequence number: 353296499
+ubi0: available PEBs: 0, total reserved PEBs: 64, PEBs reserved for bad PEB handling: 40
+ubi0: background thread "ubi_bgt0d" started, PID 708
+UBIFS (ubi0:0): background thread "ubifs_bgt0_0" started, PID 711
+UBIFS (ubi0:0): UBIFS: mounted UBI device 0, volume 0, name "configs"
+UBIFS (ubi0:0): LEB size: 126976 bytes (124 KiB), min./max. I/O unit sizes: 2048 bytes/2048 bytes
+UBIFS (ubi0:0): FS size: 1396736 bytes (1 MiB, 11 LEBs), journal size 888833 bytes (0 MiB, 5 LEBs)
+UBIFS (ubi0:0): reserved for root: 65970 bytes (64 KiB)
+UBIFS (ubi0:0): media format: w4/r0 (latest is w4/r0), UUID 97DB6A17-B959-4F6C-A1D1-12BA02047448, small LPT model
+ubi1: attaching mtd5
+ubi1: scanning is finished
+ubi1: attached mtd5 (name "reserve1", size 128 MiB)
+ubi1: PEB size: 131072 bytes (128 KiB), LEB size: 126976 bytes
+ubi1: min./max. I/O unit sizes: 2048/2048, sub-page size 2048
+ubi1: VID header offset: 2048 (aligned 2048), data offset: 4096
+ubi1: good PEBs: 1020, bad PEBs: 4, corrupted PEBs: 0
+ubi1: user volume: 1, internal volumes: 1, max. volumes count: 128
+ubi1: max/mean erase counter: 4234/1942, WL threshold: 4096, image sequence number: 914180297
+ubi1: available PEBs: 0, total reserved PEBs: 1020, PEBs reserved for bad PEB handling: 36
+ubi1: background thread "ubi_bgt1d" started, PID 720
+UBIFS (ubi1:0): background thread "ubifs_bgt1_0" started, PID 723
+UBIFS (ubi1:0): UBIFS: mounted UBI device 1, volume 0, name "reserve1"
+UBIFS (ubi1:0): LEB size: 126976 bytes (124 KiB), min./max. I/O unit sizes: 2048 bytes/2048 bytes
+UBIFS (ubi1:0): FS size: 123039744 bytes (117 MiB, 969 LEBs), journal size 6221824 bytes (5 MiB, 49 LEBs)
+UBIFS (ubi1:0): reserved for root: 4952683 bytes (4836 KiB)
+UBIFS (ubi1:0): media format: w4/r0 (latest is w4/r0), UUID BCBDE5E0-4C0B-4978-9734-FC58D9F68227, small LPT model
+IPv6: ADDRCONF(NETDEV_UP): eth0: link is not ready
+IPv6: ADDRCONF(NETDEV_UP): eth0: link is not ready
+macb e000b000.ethernet eth0: unable to generate target frequency: 25000000 Hz
+macb e000b000.ethernet eth0: link up (100/Full)
+IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+In axi fpga driver!
+request_mem_region OK!
+AXI fpga dev virtual address is 0xcfb38000
+*base_vir_addr = 0xab00d
+In fpga mem driver!
+request_mem_region OK!
+fpga mem virtual address is 0xd2000000
+random: nonblocking pool is initialized
+2023-02-16 11:31:09 driver/thread.c:3055:create_restart_monitor_thread: create thread
+2023-02-16 11:31:09 Read tune config: tune_profile=-1, tune_status=0, tune_frequency=0, tune_voltage=0, tune_freq_step=25, tune_volt_step=10, tune_max_frequency=0, tune_power=0, tune_bad_domains_threshold=3, tune_max_voltage=2100, tune_freq_yellow_step=10, tune_max_restarts=10, tune_restarts=0, voltage_increase=0, voltage_pre_heat_delay=240, tune_decrease_voltage_mode=-1, tune_uptime=120, tune_chain_statuses=0, tune_bad_freq_step=25, tune_one_chain_freq_increased=-1, bad                                                                                                    ,                                                                                                    
+2023-02-16 11:31:09 driver/driver-btm-api.c:294:init_freq_mode: This is scan-user version
+2023-02-16 11:31:09 driver/driver-btm-api.c:2483:bitmain_soc_init: opt_multi_version     = 1
+2023-02-16 11:31:09 driver/driver-btm-api.c:2484:bitmain_soc_init: opt_bitmain_ab        = 1
+2023-02-16 11:31:09 driver/driver-btm-api.c:2485:bitmain_soc_init: opt_bitmain_work_mode = 1
+2023-02-16 11:31:09 driver/driver-btm-api.c:2486:bitmain_soc_init: Miner compile time: Mon Oct 18 17:47:22 MSK 2021 type: Antminer S9K v1.2.2 beta
+2023-02-16 11:31:09 driver/driver-btm-api.c:2488:bitmain_soc_init: commit version: ab11412 2021-10-19 13:45:51, build by: root 2021-10-19 13:52:15
+2023-02-16 11:31:09 driver/driver-btm-api.c:1904:show_sn: no SN got, please write SN to /nvdata/sn
+2023-02-16 11:31:09 driver/driver-btm-api.c:1958:miner_device_init: Detect 256MB control board of XILINX
+2023-02-16 11:31:09 driver/driver-btm-api.c:1932:init_fan_parameter: fan_eft : 0  fan_pwm : 0
+2023-02-16 11:31:15 driver/driver-btm-api.c:1606:init_miner_version: miner ID : 8068a4025c20885c
+2023-02-16 11:31:15 driver/driver-btm-api.c:1611:init_miner_version: FPGA Version = 0xB00D
+2023-02-16 11:31:16 driver/thread.c:3065:create_read_nonce_reg_thread: create thread
+2023-02-16 11:31:16 driver/driver-btm-api.c:1685:bitmain_board_init: product_id[0] = 0
+2023-02-16 11:31:16 driver/driver-btm-api.c:1706:bitmain_board_init: project:1
+2023-02-16 11:31:16 driver/driver-btm-api.c:1049:dump_pcb_bom_version: Chain [0] PCB Version: 0x0039
+2023-02-16 11:31:16 driver/driver-btm-api.c:1050:dump_pcb_bom_version: Chain [0] BOM Version: 0x0010
+2023-02-16 11:31:22 driver/driver-btm-api.c:1740:bitmain_board_init: Fan check passed.
+2023-02-16 11:31:23 driver/board.c:31:jump_and_app_check_restore_pic: chain[0] PIC jump to app
+2023-02-16 11:31:26 driver/board.c:34:jump_and_app_check_restore_pic: Check chain[0] PIC fw version=0xb0
+2023-02-16 11:31:26 driver/thread.c:3060:create_pic_heart_beat_thread: create thread
+2023-02-16 11:31:26 driver/power_api.c:228:power_init: power init ... 
+2023-02-16 11:31:26 driver/power_api.c:701:set_to_highest_voltage: Chain[0] set to voltage 10.40
+2023-02-16 11:31:26 driver/power.c:386:dspic33epxx_set_voltage: chain[0] is ok (iic_index = 8)!
+2023-02-16 11:31:32 driver/driver-btm-api.c:1463:check_asic_number_with_power_on: Chain[0]: find 60 asic, times 0
+2023-02-16 11:31:35 Highest voltage is 10.40
+2023-02-16 11:31:35 voltage[0] = 960
+2023-02-16 11:31:35 driver/power_api.c:400:set_working_chain_voltage: working_voltage[0] = 9.600000
+2023-02-16 11:31:35 driver/driver-hash-chip.c:169:set_misc_control: chain = 0, chip 120, misc=0x7a61
+2023-02-16 11:31:35 Chain 0, sensor num 0, asic addr 120, eeprom offset -4
+2023-02-16 11:31:35 driver/driver-hash-chip.c:169:set_misc_control: chain = 0, chip 156, misc=0x7a61
+2023-02-16 11:31:35 Chain 0, sensor num 1, asic addr 156, eeprom offset -4
+2023-02-16 11:31:35 driver/temperature.c:325:calibrate_temp_sensor_all_chains: chain 0 temp sensor TMP451, offset -4
+2023-02-16 11:31:35 driver/uart.c:49:set_baud: set UART baud to 1500000
+2023-02-16 11:31:35 driver/driver-hash-chip.c:68:dhash_chip_set_baud_v2: misc=0x2101
+2023-02-16 11:31:35 driver/driver-hash-chip.c:77:dhash_chip_set_baud_v2: read bc write is 0x34a5b0
+2023-02-16 11:31:35 driver/driver-hash-chip.c:169:set_misc_control: chain = 0, chip 120, misc=0x6161
+2023-02-16 11:31:35 driver/driver-hash-chip.c:169:set_misc_control: chain = 0, chip 156, misc=0x6161
+2023-02-16 11:31:36 driver/driver-btm-api.c:678:check_bringup_temp: Bring up temperature is 12
+2023-02-16 11:31:36 driver/thread.c:3080:create_check_miner_status_thread: create thread
+2023-02-16 11:31:36 driver/thread.c:3070:create_set_miner_status_thread: create thread
+2023-02-16 11:31:36 driver/thread.c:3095:create_auto_tune_thread: create thread
+2023-02-16 11:31:36 driver/driver-hash-chip.c:299:set_clock_delay_control: core_data = 0x04
+2023-02-16 11:31:36 driver/driver-btm-soc.c:112:open_core_bm139x: Start Open Core!!
+2023-02-16 11:31:38 driver/driver-btm-soc.c:155:open_core_bm139x: End Open Core!!
+2023-02-16 11:31:38 driver/driver-btm-api.c:2666:bitmain_soc_init: get freq from eeprom
+2023-02-16 11:31:49 driver/power_api.c:951:slowly_set_working_chain_voltage: slowly setting to voltage: 9.60 ...
+2023-02-16 11:31:49 driver/power_api.c:847:slowly_adapt_voltage: target_voltage = 9.600000, current = 10.400000
+2023-02-16 11:31:50 driver/power.c:386:dspic33epxx_set_voltage: chain[0] is ok (iic_index = 10)!
+2023-02-16 11:31:50 driver/power_api.c:445:set_voltage_by_iic_power: now setting voltage to : 10.268093 
+2023-02-16 11:31:57 driver/power.c:386:dspic33epxx_set_voltage: chain[0] is ok (iic_index = 12)!
+2023-02-16 11:31:57 driver/power_api.c:445:set_voltage_by_iic_power: now setting voltage to : 10.147562 
+2023-02-16 11:32:01 driver/power.c:386:dspic33epxx_set_voltage: chain[0] is ok (iic_index = 14)!
+2023-02-16 11:32:01 driver/power_api.c:445:set_voltage_by_iic_power: now setting voltage to : 10.037870 
+2023-02-16 11:32:08 driver/power.c:386:dspic33epxx_set_voltage: chain[0] is ok (iic_index = 16)!
+2023-02-16 11:32:08 driver/power_api.c:445:set_voltage_by_iic_power: now setting voltage to : 9.937618 
+2023-02-16 11:32:16 driver/power.c:386:dspic33epxx_set_voltage: chain[0] is ok (iic_index = 18)!
+2023-02-16 11:32:16 driver/power_api.c:445:set_voltage_by_iic_power: now setting voltage to : 9.845638 
+2023-02-16 11:32:20 driver/power.c:386:dspic33epxx_set_voltage: chain[0] is ok (iic_index = 20)!
+2023-02-16 11:32:20 driver/power_api.c:445:set_voltage_by_iic_power: now setting voltage to : 9.760946 
+2023-02-16 11:32:27 driver/power.c:386:dspic33epxx_set_voltage: chain[0] is ok (iic_index = 22)!
+2023-02-16 11:32:27 driver/power_api.c:445:set_voltage_by_iic_power: now setting voltage to : 9.682709 
+2023-02-16 11:32:35 driver/power.c:386:dspic33epxx_set_voltage: chain[0] is ok (iic_index = 23)!
+2023-02-16 11:32:35 driver/power_api.c:445:set_voltage_by_iic_power: now setting voltage to : 9.645785 
+2023-02-16 11:32:39 driver/power.c:386:dspic33epxx_set_voltage: chain[0] is ok (iic_index = 24)!
+2023-02-16 11:32:39 driver/power_api.c:445:set_voltage_by_iic_power: now setting voltage to : 9.610217 
+2023-02-16 11:32:40 driver/driver-btm-api.c:1015:set_timeout: freq = 385, percent = 50, hcn = 131072, timeout = 340
+2023-02-16 11:32:40 driver/driver-btm-api.c:2687:bitmain_soc_init: check fixup
+2023-02-16 11:32:40 driver/thread.c:3050:create_temperature_monitor_thread: create thread
+2023-02-16 11:32:40 driver/thread.c:3075:create_check_system_status_thread: create thread
+2023-02-16 11:32:40 driver/thread.c:3087:create_read_hash_rate_thread: create thread
+2023-02-16 11:32:41 driver/driver-btm-api.c:2755:bitmain_soc_init: Init done!
+2023-02-16 11:32:41 driver/driver-btm-api.c:210:set_miner_status: STATUS_INIT
+2023-02-16 11:32:41 driver/driver-btm-api.c:210:set_miner_status: STATUS_OKAY
+2023-02-16 11:32:46 driver/driver-btm-api.c:2999:dhash_chip_send_job: Version num 2
